@@ -1,0 +1,836 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1{
+    margin:0px;
+}
+
+@media (min-width: 801px) {
+
+    .app:before{
+        content:' ';
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        border:24px solid white;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        pointer-events: none;
+    }
+
+    .app{
+        background-color: #07080a;
+        color:white;
+        padding: 0 32px;
+    }
+
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        margin:0px;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin:0px;
+    }
+
+    .homeContent{
+        padding-left:50vw;
+        padding-top:15vh;
+        padding-bottom:60px;
+        background-image: url('../img/mel_small.png');
+        background-repeat: no-repeat;
+        background-color: #07080a;
+        background-position: middle center;
+        background-size: 50%;
+    }
+
+    .line{
+        width:calc(50vw - 30px);
+        height:4px;
+        background-color: white;
+        margin-bottom: 37px;
+
+    }
+
+    .headerContent{
+        margin-bottom:25px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li{
+        font-weight: 700;
+        line-height: 24px;
+        margin-top:8px;
+
+    }
+
+    .demoContent{
+        height: calc(100vh - 64px);
+        padding-left:32px;
+        padding-right:32px;
+        padding-top:32px;
+    }
+
+
+    .demoContent h2 {
+        margin-bottom: 32px
+    }
+
+    audio{
+        margin-left: -10px
+    }
+
+    .demoContent h3 {
+        font-size: 60px;
+        margin-top: 32px;
+        margin-bottom: 5px;
+    }
+
+    
+
+
+
+    .bioContent{
+        padding:32px; 
+        height:100vh;   
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .quoteContent{
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+        width:100vw;
+    }
+
+    .bioBodyContent{
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+        -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 40px; /* Firefox */
+        column-gap: 40px;
+        -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+        page-break-inside: avoid; /* Firefox */
+        break-inside: avoid;
+    }
+
+    .bioContent .line{
+        width: 100vw;
+        margin-left: -64px;
+    }
+
+    .bioContent h2{
+        display:block;
+        width: 67vw;
+        margin-bottom:32px;
+    }
+
+
+
+    .bioBodyContent > p:first-child {
+      margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    .contactContent{
+        margin-top:100px;
+        padding-left:32px;
+        background-image: url(../img/stars_logo.png);
+        background-repeat: no-repeat;
+        background-position: bottom 30px left;
+        background-size: 40vw;
+        height:95vh;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        
+    }
+
+    .contactContent h2{
+        margin-top:30px;
+        margin-bottom:20px;
+
+    }
+
+    a {
+        color:white;
+        font-weight: 700;
+        text-decoration:none;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 801px) {
+
+
+    .app:before{
+        content:' ';
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        border:8px solid white;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        pointer-events: none;
+    }
+
+    .app{
+        background-color: #07080a;
+        color:white;
+        padding: 0 32px;
+        background-image: url('../img/mel_small.png');
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-color: #07080a;
+    }
+
+    nav{
+        display:none;
+    }
+
+    h1{
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 60px;
+        margin:0px;
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin:0px;
+    }
+
+    .homeContent{
+        padding-top:253px;
+        margin-bottom:60px;
+    }
+
+    .headerContent:after{
+        content:' ';
+        display: block;
+        background-color:white;
+        height:4px;
+        margin-top:19px;
+        margin-bottom:31px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li{
+        font-weight: 700;
+        line-height: 24px;
+        margin-top:8px;
+
+    }
+
+    h3{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        margin:0px;
+    }
+
+    .demoContent h2 {
+        margin-bottom: 32px
+    }
+
+    audio{
+        width:80vw;
+        margin:-10px;
+    }
+
+    .demoContent h3 {
+        margin-top: 32px;
+        margin-bottom: 5px;
+    }
+
+    .demoContent{
+        margin-bottom: 80px;
+    }
+
+    .quoteContent{
+        margin-bottom: 50px;
+    }
+
+    /*
+    .quoteContent h2:before{
+        content:'"';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        display:block;
+    }
+
+    .quoteContent h2:after{
+        content:'"';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }*/
+
+    .bioContent{
+        margin-bottom: 50px;
+    }
+
+    .contactContent{
+        padding-bottom: 150px;
+        background-image: url(../img/stars_logo.png);
+        background-repeat: no-repeat;
+        background-position: bottom 24px center;
+        background-size: 100vw;
+    }
+
+    .contactContent h2{
+        margin-top:40px;
+        margin-bottom:20px;
+
+    }
+
+    a {
+        color:white;
+        font-weight: 700;
+        text-decoration:none;
+    }
+
+
+}
+
+/*
+
+@media (max-width: 801px) {
+
+    .app{
+        width: 100vw;
+        height: 100vh;
+        border: 8px solid white;
+        background-color: rgba(7, 8, 10, 0.1);
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color:white;
+    }
+
+
+    .bioPhoto{
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background-image: url('../img/mel.jpg');
+    background-position: left -30px top -40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #07080a;
+    }
+
+
+    .darkBG{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 1;
+        background-color: #07080a;
+
+    }
+
+
+    .content{
+        margin-left:10vw;
+    }
+
+    nav {
+    float:right;
+    margin-right:10px;
+    margin-top:10px;
+    z-index:100;
+
+    }
+
+    nav a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding:5px;
+}
+
+h1{
+    position: absolute;
+    bottom: 8px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin:0px;
+}
+
+.line {
+    height: 4px;
+    background-color:#fff;
+    width: calc(90vw-16px);
+}
+
+.headerContent{
+    height:65vh;
+    min-height:270px;
+    position:relative;
+    pointer-events: none;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin:0px;
+}
+
+p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.bodyContent{
+    margin-top:16px;
+}
+
+
+}
+
+
+@media (min-width: 802px) {
+
+.app{
+    width: 100vw;
+    color:white;
+    min-height: 710px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #07080a;
+
+}
+
+.bioPhoto{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image:url("../img/mel.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #07080a;
+}
+.darkBG{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 1;
+        background-color: #07080a;
+
+    }
+
+.content{
+    position:absolute;
+    width:50vw;
+    right:0px;
+    pointer-events: none;
+}
+
+nav {
+    float:right;
+    margin-right:15px;
+    margin-top:18px;
+    z-index:100;
+
+}
+
+h1{
+    position: absolute;
+    bottom: 25px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    margin:0px;
+}
+
+.line {
+
+    height: 4px;
+    background-color:#fff;
+    width:50vw;
+}
+
+.headerContent{
+    height:38vh;
+    min-height:270px;
+    position:relative;
+    pointer-events: none;
+}
+
+nav a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding:15px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin:0px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.bodyContent{
+    margin-top:37px;
+}
+
+
+}
+
+
+
+
+
+.bioBodyContent{
+    -webkit-column-count: 2;
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
