@@ -10,13 +10,27 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1vw;
-    line-height: 1.4;
-    font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-variant: normal;
+
+@media (min-width: 801px) {
+    html {
+        color: #222;
+        font-size: 1vw;
+        line-height: 1.4;
+        font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        color: #222;
+        font-size: 14px;
+        line-height: 1.4;
+        font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+    }
 }
 
 /*
