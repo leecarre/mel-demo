@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1vw;
     line-height: 1.4;
     font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -106,36 +106,52 @@ h1{
         width: 100vw;
         height: 100vh;
         z-index: 1000;
-        border:24px solid white;
+        border:2rem solid white;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         pointer-events: none;
+        
     }
+
+
 
     .app{
         background-color: #07080a;
         color:white;
         padding: 0 32px;
+        overflow:hidden;
+        height:100vh;
+    }
+
+    nav{
+        position: absolute;
+        right:50px;
+        top:50px;
+    }
+
+    nav a{
+        padding-right:1rem;
+        font-size:1.2rem;
     }
 
     h1{
-        font-size: 80px;
+        font-size: 6.3rem;
         font-weight: 700;
-        line-height: 80px;
+        line-height: 6.3rem;
         margin:0px;
     }
 
     h2{
-        font-size: 24px;
+        font-size: 2rem;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 2rem;
         margin:0px;
     }
 
     .homeContent{
         padding-left:50vw;
         padding-top:15vh;
-        padding-bottom:60px;
+        padding-bottom:400px;
         background-image: url('../img/mel_small.png');
         background-repeat: no-repeat;
         background-color: #07080a;
@@ -156,7 +172,7 @@ h1{
     }
 
     p{
-        font-size:16px;
+        font-size:1.4rem;
     }
 
     ul{
@@ -166,8 +182,9 @@ h1{
 
     li{
         font-weight: 700;
-        line-height: 24px;
-        margin-top:8px;
+        line-height: 2rem;
+        font-size:1.4rem;
+        margin-top:1.2rem;
 
     }
 
@@ -175,12 +192,18 @@ h1{
         height: calc(100vh - 64px);
         padding-left:32px;
         padding-right:32px;
-        padding-top:32px;
+        padding-top:12vh;
+        overflow:scroll;
+    }
+
+    .demoItem{
+        margin-bottom: 3rem;
     }
 
 
     .demoContent h2 {
-        margin-bottom: 32px
+        margin-bottom: 5vh;
+
     }
 
     audio{
@@ -188,13 +211,13 @@ h1{
     }
 
     .demoContent h3 {
-        font-size: 60px;
-        margin-top: 32px;
-        margin-bottom: 5px;
+        font-size: 5rem;
+        margin-top: 2vh;
+        margin-bottom: 1rem;
     }
 
     
-
+    .navlink{margin-bottom:50px;}
 
 
     .bioContent{
@@ -202,6 +225,7 @@ h1{
         height:100vh;   
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        padding-top:15vh;
     }
 
     .quoteContent{
@@ -210,16 +234,17 @@ h1{
         width:100vw;
     }
 
+    .bodyContent{
+        padding-right:4rem;
+    }
+
     .bioBodyContent{
-        -webkit-column-count: 3; /* Chrome, Safari, Opera */
-        -moz-column-count: 3; /* Firefox */
-        column-count: 3;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
         -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
         -moz-column-gap: 40px; /* Firefox */
         column-gap: 40px;
-        -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-        page-break-inside: avoid; /* Firefox */
-        break-inside: avoid;
     }
 
     .bioContent .line{
@@ -253,7 +278,7 @@ h1{
         padding-left:32px;
         background-image: url(../img/stars_logo.png);
         background-repeat: no-repeat;
-        background-position: bottom 30px left;
+        background-position: bottom 90px right;
         background-size: 40vw;
         height:95vh;
         -moz-box-sizing: border-box;
@@ -262,9 +287,9 @@ h1{
     }
 
     .contactContent h2{
-        margin-top:30px;
-        margin-bottom:20px;
-
+        margin-top:3rem;
+        margin-bottom:2rem;
+        font-size:2rem;
     }
 
     a {
