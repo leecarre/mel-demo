@@ -156,7 +156,7 @@ h1{
     }
 
     h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin:0px;
@@ -166,7 +166,7 @@ h1{
         padding-left:50vw;
         padding-top:15vh;
         padding-bottom:400px;
-        background-image: url('../img/mel_small.png');
+        background-image: url('../img/mel_small.jpg');
         background-repeat: no-repeat;
         background-color: #07080a;
         background-position: middle center;
@@ -186,7 +186,7 @@ h1{
     }
 
     p{
-        font-size:1.4rem;
+        font-size:1.1rem;
     }
 
     ul{
@@ -197,7 +197,7 @@ h1{
     li{
         font-weight: 700;
         line-height: 2rem;
-        font-size:1.4rem;
+        font-size:1.1rem;
         margin-top:1.2rem;
 
     }
@@ -206,7 +206,7 @@ h1{
         height: calc(100vh - 64px);
         padding-left:32px;
         padding-right:32px;
-        padding-top:12vh;
+        padding-top:22vh;
         overflow:scroll;
     }
 
@@ -239,7 +239,19 @@ h1{
         height:100vh;   
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        padding-top:15vh;
+        padding-top:calc(15vh + 12.6rem + 25px)
+    }
+
+    .bioContent:before{
+        content:' ';
+        display: block;
+        /*position: relative;*/
+        margin-left: -50px;
+        margin-bottom: 2rem;
+        /*top: calc(25vh+6.3vw+35px);*/
+        width: 100vw;
+        height: 4px;
+        background-color:white;
     }
 
     .quoteContent{
@@ -279,10 +291,69 @@ h1{
     }
 
 
+    .clientsContent:before{
+        content:' ';
+        display: block;
+        /*position: relative;*/
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: 2rem;
+        margin-top: calc(15vh + 12.6rem + 25px);
+        /*top: calc(25vh+6.3vw+35px);*/
+        width: 100vw;
+        height: 4px;
+        background-color:white;
+    }
 
 
 
 
+
+    .clientsContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clientsContent h2{
+        visibility: hidden;
+    }
+
+
+    .clients1{
+        width:60%;
+        height: 20vh;
+        background-image: url(../img/logo1.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .clients2{
+
+        width:40%;
+        height: 20vh;
+        background-image: url(../img/logo2.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .clients3{
+
+        width:60%;
+        height: 20vw;
+        background-image: url(../img/logo3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .clients4{
+
+        width:40%;
+        height: 20vw;
+        background-image: url(../img/logo4.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
 
 
 
@@ -340,10 +411,9 @@ h1{
         background-color: #07080a;
         color:white;
         padding: 0 32px;
-        background-image: url('../img/mel_small.png');
+        background-image: url('../img/mel_small.jpg');
         background-size: 100vw;
         background-repeat: no-repeat;
-        background-color: #07080a;
     }
 
     nav{
@@ -444,7 +514,7 @@ h1{
     }
 
     .contactContent{
-        padding-bottom: 150px;
+        padding-bottom: 200px;
         background-image: url(../img/stars_logo.png);
         background-repeat: no-repeat;
         background-position: bottom 24px center;
@@ -462,6 +532,54 @@ h1{
         font-weight: 700;
         text-decoration:none;
     }
+
+    .clientsContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clientsContent h2{
+        margin-bottom: 30px;
+    }
+
+
+    .clients1{
+
+        width:100%;
+        height: 20vw;
+        background-image: url(../img/logo1.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .clients2{
+
+        width:100%;
+        height: 20vw;
+        background-image: url(../img/logo2.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80%;
+    }
+    .clients3{
+
+        width:100%;
+        height: 20vw;
+        background-image: url(../img/logo3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    .clients4{
+
+        width:100%;
+        height: 20vw;
+        background-image: url(../img/logo4.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80%;
+    }
+
 
 
 }
