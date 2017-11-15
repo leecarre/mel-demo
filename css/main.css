@@ -255,9 +255,10 @@ h1{
     }
 
     .quoteContent{
-        padding-top: 2vw;
-        padding-bottom: 1vw;
-        width:100vw;
+        padding:32px;   
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+		padding-top:calc(15vh)
     }
 
     .bodyContent{
@@ -273,6 +274,10 @@ h1{
         column-gap: 40px;
     }
 
+	.bioBodyContent p{
+		font-size:1.5vh;
+	}
+
     .bioContent .line{
         width: 100vw;
         margin-left: -64px;
@@ -283,6 +288,8 @@ h1{
         width: 67vw;
         margin-bottom:32px;
     }
+
+
 
 
 
@@ -361,7 +368,7 @@ h1{
     .contactContent{
         margin-top:100px;
         padding-left:32px;
-        background-image: url(../img/stars_logo.png);
+        /*background-image: url(../img/stars_logo.png);*/
         background-repeat: no-repeat;
         background-position: bottom 90px right;
         background-size: 40vw;
@@ -382,6 +389,15 @@ h1{
         font-weight: 700;
         text-decoration:none;
     }
+
+	.agentLayout {
+		display: flex;
+        flex-wrap: wrap;
+	}
+	
+	.agentLayout > * {
+		padding-right:30px;
+	}
 
 
 }
@@ -489,9 +505,7 @@ h1{
         margin-bottom: 80px;
     }
 
-    .quoteContent{
-        margin-bottom: 50px;
-    }
+    
 
     /*
     .quoteContent h2:before{
@@ -532,6 +546,10 @@ h1{
         font-weight: 700;
         text-decoration:none;
     }
+
+	.quoteContent{
+		
+	}
 
     .clientsContent{
         display: flex;
